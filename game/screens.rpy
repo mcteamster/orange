@@ -351,6 +351,10 @@ style main_menu_version:
 ## this screen is intended to be used with one or more children, which are
 ## transcluded (placed) inside it.
 
+image mobile_return:
+    "meta/menu_return.png"
+    zoom 1.5
+
 screen game_menu(title, scroll=None, yinitial=0.0):
 
     style_prefix "game_menu"
@@ -390,7 +394,10 @@ screen game_menu(title, scroll=None, yinitial=0.0):
                     transclude
     use navigation
     imagebutton:
-        idle "meta/menu_return.png"
+        if renpy.variant("small"):
+            idle "mobile_return"
+        else:
+            idle "meta/menu_return.png"
         style "return_button"
         action Return()
     label title

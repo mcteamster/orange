@@ -4,9 +4,7 @@
 # Renpy Artefacts
 *.rpyc*
 *.rpymc
-*.save
-game/saves/persistent
-games/saves/navigation.json
+game/saves/*
 cache/
 
 # Logs

@@ -33,7 +33,10 @@ screen help_button():
     hbox:
         align (1.0, 0.0)
         imagebutton:
-            idle "help_page"
+            if renpy.variant("small"):
+                idle "mobile_help"
+            else:
+                idle "help_page"
             action [
                 ShowMenu("help")
             ]
@@ -49,3 +52,8 @@ screen read_hint(text_content):
         text_align 0.5
         xmaximum 0.4
         color "#000"
+
+# Sprites
+image mobile_help:
+    "meta/help_page.png"
+    zoom 1.5
