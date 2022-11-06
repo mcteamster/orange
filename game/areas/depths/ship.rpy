@@ -56,6 +56,7 @@ label ship(origin="pier"):
         show bubbles_float_6
         show bubbles_float_7
         show bubbles_float_8
+        play audio "audio/bubbles.wav"
     with fade
     call screen interact_ship
 
@@ -123,6 +124,7 @@ label ship(origin="pier"):
         show bubbles_float_6
         show bubbles_float_7
         show bubbles_float_8
+        play audio "audio/bubbles.wav"
         with fade
         show screen interact_ship_fight
         pause 0.5
@@ -271,7 +273,9 @@ label drowned:
     show bubbles_float_6
     show bubbles_float_7
     show bubbles_float_8
+    play audio "audio/bubbles.wav"
     show depths_deep_water
+    play audio "audio/bell.wav"
     pause 3.0
     show depths_drowned -closeup
     pause 3.0

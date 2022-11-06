@@ -162,6 +162,7 @@ label horde:
         zoom 1
         linear 2.0 alpha 1.0 zoom 0.85
         linear 4.0 zoom 0.55
+    play audio "audio/bell.wav"
     pause 6.0
     jump game_over
 

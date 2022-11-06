@@ -108,6 +108,7 @@ label pub_smoke:
     show screen interact_pub_smoke
     show smoke_thrown
     pause 0.75
+    play audio "audio/pop.wav"
     hide smoke_thrown
     show smoke_plume
     show smoke_bang
@@ -149,6 +150,7 @@ label hanged:
     show dock_flagpole
     show dock_noose
     with fade
+    play audio "audio/bell.wav"
     pause 3.5
     jump game_over
 

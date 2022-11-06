@@ -69,5 +69,6 @@ label arrested:
     scene bg plain_charcoal
     show jail_behind_bars
     with fade
+    play audio "audio/bell.wav"
     pause 4.0
     jump game_over

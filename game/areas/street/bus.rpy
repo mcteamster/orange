@@ -68,6 +68,7 @@ label bus_ride(destination):
         scene bg street_bus_ride
     show expression "bus_road " + destination
     show bus_window
+    play audio "audio/bus.wav"
     with fade
     pause 3.0
     jump expression destination

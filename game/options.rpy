@@ -24,7 +24,7 @@ define gui.show_name = False
 
 ## The version of the game.
 
-define config.version = "4.0.0"
+define config.version = "4.0.1"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
@@ -52,7 +52,19 @@ Story and Graphics by Andrew W.
 
 Programming and Production by Tony Z.
 
-SFX sourced from {a=https://soundbible.com}soundbible.com{/a} under Creative Commons Attribution 3.0 license.
+Sound Effects sourced from {a=https://soundbible.com}soundbible.com{/a} under Creative Commons Attribution 3.0 license:\n
+- {a=https://soundbible.com/1571-Fishtank-Bubbles-2.html}Bubbles{/a} by amanda\n
+- {a=https://soundbible.com/2209-Muscle-Car.html}Bus{/a} by Daniel Simion\n
+- {a=https://soundbible.com/2062-Metal-Gong-1.html}Bell{/a} by Dianakc\n
+- {a=https://soundbible.com/2068-Woosh.html}Whoosh{/a} by Mark DiAngelo\n
+- {a=https://soundbible.com/1529-Dog-Bite.html}Bite{/a},
+{a=https://soundbible.com/538-Blast.html}Explosion{/a},
+{a=https://soundbible.com/1522-Balloon-Popping.html}Pop{/a},
+{a=https://soundbible.com/1201-Automatic-Machine-Gun-3x.html}Rifle{/a},
+{a=https://soundbible.com/1008-Decapitation.html}Sword{/a} by Mike Koenig\n
+- {a=https://soundbible.com/1996-Shotgun-Reload-Old.html}Reload{/a},
+{a=https://soundbible.com/2095-Mossberg-500-Pump-Shotgun.html}Shotgun{/a}, by RA The Sun God\n
+- {a=https://soundbible.com/2021-Atchisson-Assault-Shotgun.html}Sawnoff{/a} by Soundeffects
 """)
 
 
@@ -84,7 +96,6 @@ init:
     $ config.keymap["fast_skip"] = []
     $ config.keymap["director"] = []
     # DISABLED IN PRODUCTION
-    $ config.keymap["reload_game"] = []
     $ config.keymap["console"] = []
     $ config.keymap["console_older"] = []
     $ config.keymap["console_newer"] = []

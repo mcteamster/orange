@@ -110,6 +110,7 @@ label arcade(origin="chinatown_east"):
         scene bg room_arcade
         show smoke_cloud
         show smoke_plume
+        play audio "audio/pop.wav"
         if inventory["smoke"]["active"] == False:
             $ inventory["smoke"]["active"] = True
         pause 1.0

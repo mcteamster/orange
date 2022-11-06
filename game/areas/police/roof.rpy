@@ -136,6 +136,7 @@ label helicopter:
             align (0.5, 1.0)
             pos (1.2, 1.1)
             linear 0.25 xpos -0.2
+        play audio "audio/rifle.wav"
         officer "BURN IN HECK YOU MOTHERFLIPPERS!{w=2}{nw}"
 
     label .sitting:

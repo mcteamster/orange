@@ -116,6 +116,7 @@ label ninja_assassin:
                     selected assassin["active"] == False
                     sensitive assassin["active"]
                     action [
+                        Play("audio", "audio/whoosh.wav"),
                         SetDict(assassin, "active", False),
                         SetDict(assassin, "hit_time", ninja_assassin_ticks),
                     ]

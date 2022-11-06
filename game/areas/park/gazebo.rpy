@@ -188,6 +188,7 @@ label gazebo_northeast:
     call screen interact_gazebo_northeast
 
     label .ambushed:
+        play audio "audio/bite.wav"
         show zombie_ambush onlayer screens zorder 1:
             align (0.5, 0.5)
             pos (0.5, 1.5)
@@ -406,6 +407,7 @@ label gazebo_northwest:
     call screen interact_gazebo_northwest
 
     label .ambushed:
+        play audio "audio/bite.wav"
         show zombie_ambush onlayer screens zorder 1:
             align (0.5, 0.5)
             pos (0.5, 1.5)
@@ -624,6 +626,7 @@ label gazebo_southeast:
     call screen interact_gazebo_southeast
 
     label .ambushed:
+        play audio "audio/bite.wav"
         show zombie_ambush onlayer screens zorder 1:
             align (0.5, 0.5)
             pos (0.5, 1.5)

@@ -172,6 +172,7 @@ label bank_south:
     call screen interact_bank_south
 
     label .ambushed:
+        play audio "audio/bite.wav"
         show zombie_ambush onlayer screens zorder 1:
             align (0.5, 0.5)
             pos (0.5, 1.5)
@@ -392,6 +393,7 @@ label street_shot_death:
     scene bg plain_charcoal
     show shot_death
     with fade
+    play audio "audio/bell.wav"
     pause 6.0
     $ inventory["sawnoff"]["active"] = False
     $ inventory["bomb"]["active"] = True

@@ -194,6 +194,7 @@ label tee_south:
     call screen interact_tee_south
 
     label .ambushed:
+        play audio "audio/bite.wav"
         show zombie_ambush onlayer screens zorder 1:
             align (0.5, 0.5)
             pos (0.5, 1.5)

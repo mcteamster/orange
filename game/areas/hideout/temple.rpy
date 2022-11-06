@@ -400,9 +400,13 @@ label temple_raid:
     show flash_1 zorder 1
     show strike_6 zorder 2 # Front Right
     show rappel_6 zorder 1
-    pause 1.0
+    pause 0.25
+    play audio "audio/whoosh.wav"
+    play music "audio/rifle.wav"
+    pause 0.75
     show smoke_plume zorder 2
     show smoke_cloud zorder 2
+    play audio "audio/pop.wav"
     show alcove_ninja_1:
         ninja_wound
         linear 1.0 ypos 0.7
@@ -444,7 +448,11 @@ label temple_raid:
         "ninja/alcove_ninja_run.png"     
         alpha 1.0
         linear 1.0 pos (-0.2, 0.8)
-    pause 4.0
+    pause 0.5
+    play audio "audio/whoosh.wav"
+    pause 1.0
+    play audio "audio/whoosh.wav"
+    pause 2.5
     show temple_raid_shotgun zorder 3
     pause 0.5
     show screen interact_temple_raid
@@ -560,6 +568,7 @@ label temple_raid_shootout:
     scene bg hideout_temple_side
     show pillars onlayer screens zorder 1
     with fade
+    stop music fadeout 0.5
     show screen interact_temple_raid_shootout
     show screen temple_raid_timer
     show shotgun equip onlayer screens zorder 50
@@ -577,6 +586,7 @@ label temple_raid_shootout:
         hide screen temple_raid_timer
         show bg hideout_temple_side
         show ninja_ambush onlayer screens zorder 1
+        play audio "audio/sword.wav"
         pause 0.5
         jump beheaded_death
 
@@ -599,6 +609,7 @@ label beheaded_death:
         rotate 0
         linear 5.0 zoom 0.33 rotate -90
     with fade
+    play audio "audio/bell.wav"
     pause 4.5
     $ inventory["shotgun"]["active"] = False
     jump game_over

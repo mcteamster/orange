@@ -150,6 +150,7 @@ label fork_north:
     call screen interact_fork_north
 
     label .ambushed:
+        play audio "audio/bite.wav"
         show zombie_ambush onlayer screens zorder 1:
             align (0.5, 0.5)
             pos (0.5, 1.5)
@@ -372,6 +373,7 @@ label fork_west:
     call screen interact_fork_west
 
     label .ambushed:
+        play audio "audio/bite.wav"
         show zombie_ambush onlayer screens zorder 1:
             align (0.5, 0.5)
             pos (0.5, 1.5)

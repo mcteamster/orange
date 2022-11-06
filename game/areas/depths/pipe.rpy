@@ -152,6 +152,7 @@ label mermaid_quest_complete:
     show bubbles_float_6
     show bubbles_float_7
     show bubbles_float_8
+    play audio "audio/bubbles.wav"
     with fade
     shelly "Thank you for your help."
     coral "Now our water is nice and clean."
