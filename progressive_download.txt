@@ -6,5 +6,5 @@
 - image game/gui/**
 - image game/**
 - image game/images/**
-+ music game/audio/**
+- music game/audio/**
 + voice game/voice/**

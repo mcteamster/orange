@@ -36,7 +36,7 @@ label station:
                     action [
                         Jump("booth")
                     ]
-            if inventory["shotgun"]["active"]:
+            if (inventory["sawnoff"]["active"] or inventory["shotgun"]["active"]) == False:
                 frame:
                     pos (0.25, 0.345)
                     textbutton "bounty":
@@ -239,11 +239,8 @@ label booth:
             officer "All you have to do is call us from their headquarters."
             officer "Then we'll come to you and take care of the Ninjas."
             officer "You're helping us make this city a safer place."
-        elif (progress["quests"]["ninjas"]["complete"] or inventory["noodles"]["active"]):
-            jump booth.quest
         else:
-            officer "Be careful. There are criminals all over this town."
-            officer "Keep an eye out for Ninjas. We offer a big reward if you find them."
+            jump booth.quest
         call screen interact_booth
 
     label .quest:

@@ -316,4 +316,5 @@ label backroom:
             zoom 1
             alpha 1.0
             linear 0.25 zoom 2 alpha 0.0
+        with vpunch
         call screen interact_backroom_breach

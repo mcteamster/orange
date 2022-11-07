@@ -227,8 +227,10 @@ label explode:
         zoom 3
         alpha 1.0
         linear 0.25 zoom 4.5 alpha 0.0
+    with vpunch
+    pause 0.5
     play audio "audio/bell.wav"
-    pause 4.5
+    pause 4.0
     hide screen interact_explode
     $ inventory["bomb"]["active"] = True
     jump game_over

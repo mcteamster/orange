@@ -15,7 +15,7 @@ label chinatown_east:
                 action [
                     Jump("arch_east")
                 ]
-        if inventory["shotgun"]["active"] == False:
+        if (inventory["shotgun"]["active"] == False) or (progress["night"] or inventory["key"]["active"]):
             frame:
                 pos (0.21, 0.32)
                 textbutton "arcade":
@@ -23,7 +23,8 @@ label chinatown_east:
                     action [
                         Call("arcade", "chinatown_east")
                     ]
-            if (progress["night"] or inventory["key"]["active"]) == False:
+        if (progress["night"] or inventory["key"]["active"]) == False:
+            if inventory["shotgun"]["active"] == False:
                 frame:
                     pos (0.685, 0.36)
                     textbutton "fireworks":
@@ -90,7 +91,7 @@ label chinatown_west:
                     Hide("zombies_chinatown_west"),
                     Jump("junction")
                 ]
-        if inventory["shotgun"]["active"] == False:
+        if (inventory["shotgun"]["active"] == False) or (progress["night"] or inventory["key"]["active"]):
             frame:
                 pos (0.27, 0.35)
                 textbutton "arcade":
@@ -99,7 +100,8 @@ label chinatown_west:
                         Hide("zombies_chinatown_west"),
                         Call("arcade", "chinatown_west")
                     ]
-            if (progress["night"] or inventory["key"]["active"]) == False:
+        if (progress["night"] or inventory["key"]["active"]) == False:
+            if inventory["shotgun"]["active"] == False:
                 frame:
                     pos (0.40, 0.35)
                     textbutton "noodle_house":

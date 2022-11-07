@@ -31,7 +31,7 @@ define config.version = "4.0.1"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
-----------
+------------------------
 
 Find the Orange Narwhal is a wild teenage fever dream jammed into a point-and-click adventure.
 
@@ -44,15 +44,15 @@ Click, click, click! Walk around town and uncover the mystery of what happened t
 
 Honestly this game doesn't make much sense - we just hope you enjoy figuring it out as much as we enjoyed making it.
 
-----------
+------------------------
 
 Ohnomer | 2022
 
 Story and Graphics by Andrew W.
 
-Programming and Production by Tony Z.
+Programming and Production by {a=https://games.tonz.io}Tony Z.{/a}
 
-Sound Effects sourced from {a=https://soundbible.com}soundbible.com{/a} under Creative Commons Attribution 3.0 license:\n
+Sound effects mixed from {a=https://soundbible.com}soundbible.com{/a} under {a=https://creativecommons.org/licenses/by/3.0/}Creative Commons Attribution 3.0{/a} license:\n
 - {a=https://soundbible.com/1571-Fishtank-Bubbles-2.html}Bubbles{/a} by amanda\n
 - {a=https://soundbible.com/2209-Muscle-Car.html}Bus{/a} by Daniel Simion\n
 - {a=https://soundbible.com/2062-Metal-Gong-1.html}Bell{/a} by Dianakc\n
@@ -63,7 +63,7 @@ Sound Effects sourced from {a=https://soundbible.com}soundbible.com{/a} under Cr
 {a=https://soundbible.com/1201-Automatic-Machine-Gun-3x.html}Rifle{/a},
 {a=https://soundbible.com/1008-Decapitation.html}Sword{/a} by Mike Koenig\n
 - {a=https://soundbible.com/1996-Shotgun-Reload-Old.html}Reload{/a},
-{a=https://soundbible.com/2095-Mossberg-500-Pump-Shotgun.html}Shotgun{/a}, by RA The Sun God\n
+{a=https://soundbible.com/2095-Mossberg-500-Pump-Shotgun.html}Shotgun{/a} by RA The Sun God\n
 - {a=https://soundbible.com/2021-Atchisson-Assault-Shotgun.html}Sawnoff{/a} by Soundeffects
 """)
 
@@ -110,7 +110,7 @@ init:
 
 define config.has_sound = True
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
 
 
 ## To allow the user to play a test sound on the sound or voice channel,

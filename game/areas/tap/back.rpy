@@ -320,6 +320,7 @@ label final_quest_cutscene:
             alpha 1.0
             linear 0.1 zoom 1.5
             alpha 0.0
+        with vpunch
         pause 1.0
 
     label .skyline:
@@ -345,8 +346,8 @@ label final_quest_cutscene:
             linear 4.0 xpos 0.45
         show skyline_close:
             align (0.5, 1.0)
-            pos (0.7, 1.0)
-            linear 4.0 xpos 0.5
+            pos (0.6, 1.0)
+            linear 4.0 xpos 0.4
         with fade
         pause 3.0
 
