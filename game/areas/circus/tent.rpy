@@ -322,6 +322,7 @@ label clown_quest_complete:
     hide clown_van onlayer screens
     hide screen interact_bank_south_shootout
     with fade
+    stop music fadeout 1.0
     scene bg plain_charcoal with fade
     centered "You speed across town..."
     scene bg circus_tent_table with fade

@@ -54,11 +54,14 @@ Programming and Production by {a=https://games.tonz.io}Tony Z.{/a}
 
 Sound effects mixed from {a=https://soundbible.com}soundbible.com{/a} under {a=https://creativecommons.org/licenses/by/3.0/}Creative Commons Attribution 3.0{/a} license:\n
 - {a=https://soundbible.com/1571-Fishtank-Bubbles-2.html}Bubbles{/a} by amanda\n
+- {a=https://soundbible.com/1911-Mandatory-Evacuation.html}Alarm{/a} by Brandon\n
+- {a=https://soundbible.com/1757-Car-Brake-Crash.html}Skid{/a} by Cam Martinez\n
 - {a=https://soundbible.com/2209-Muscle-Car.html}Bus{/a} by Daniel Simion\n
 - {a=https://soundbible.com/2062-Metal-Gong-1.html}Bell{/a} by Dianakc\n
 - {a=https://soundbible.com/2068-Woosh.html}Whoosh{/a} by Mark DiAngelo\n
 - {a=https://soundbible.com/1529-Dog-Bite.html}Bite{/a},
 {a=https://soundbible.com/538-Blast.html}Explosion{/a},
+{a=https://soundbible.com/1271-Harpoon.html}Harpoon{/a},
 {a=https://soundbible.com/1522-Balloon-Popping.html}Pop{/a},
 {a=https://soundbible.com/1201-Automatic-Machine-Gun-3x.html}Rifle{/a},
 {a=https://soundbible.com/1008-Decapitation.html}Sword{/a} by Mike Koenig\n
@@ -66,7 +69,6 @@ Sound effects mixed from {a=https://soundbible.com}soundbible.com{/a} under {a=h
 {a=https://soundbible.com/2095-Mossberg-500-Pump-Shotgun.html}Shotgun{/a} by RA The Sun God\n
 - {a=https://soundbible.com/2021-Atchisson-Assault-Shotgun.html}Sawnoff{/a} by Soundeffects
 """)
-
 
 ## A short name for the game used for executables and directories in the built
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,

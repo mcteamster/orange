@@ -333,6 +333,7 @@ label bank_south_shootout:
         hide sawnoff_flash onlayer screens
         $ inventory["sawnoff"]["ammo"] = 2
         hide screen reloading
+        stop music fadeout 1.0
         pause 0.5
         jump street_shot_death
 
@@ -379,6 +380,7 @@ label bank_south_shootout:
         hide swat_ambush onlayer screens
         show clown_van onlayer screens
         show swat_hit onlayer screens
+        play audio "audio/skid.wav"
         pause 0.25
         hide swat_hit onlayer screens
         show swat_dead_left:

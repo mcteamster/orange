@@ -365,6 +365,7 @@ label bank_foyer_shootout:
         hide sawnoff_flash onlayer screens
         $ inventory["sawnoff"]["ammo"] = 2
         hide screen reloading
+        stop music fadeout 1.0
         pause 0.5
         jump bank_shot_death
 

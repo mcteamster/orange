@@ -163,6 +163,7 @@ label ship(origin="pier"):
             pos (0.6, 0.5)
             linear 1.5 ypos -1.0
 
+        play audio "audio/harpoon.wav"
         hide ship_pirate_vs_mermaid
         show ship_harpoon empty
         show ship_harpoon_stream
@@ -203,6 +204,7 @@ label ship(origin="pier"):
             linear 0.25 ypos 0.15 alpha 0.0
 
         $ progress["quests"]["pirates"]["disabled"] = True
+        play audio "audio/harpoon.wav"
         hide ship_pirate_vs_mermaid
         show ship_harpoon empty
         show ship_harpoon_stream
