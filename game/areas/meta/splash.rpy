@@ -18,6 +18,7 @@ label splashscreen:
             pos (0.5, 0.5)
             linear 4.0 xpos 0.45
         with fade
+        play sound "audio/static.wav"
         pause 3.0
     
     label .table:
@@ -51,7 +52,8 @@ label splashscreen:
             pos (0.4, 0.5)
             crop (0, 0, 0.0, 1.0)
             linear 4.0 crop (0, 0, 1.0, 1.0)
-        pause 4.0
+        play sound "audio/static.wav"
+        pause 3.0
 
     label .wake:
         scene bg splash_wake
@@ -90,4 +92,5 @@ label splashscreen:
         hide screen skip_splash
         hide cutscene_top onlayer screens
         hide cutscene_bottom onlayer screens
+        stop sound
         pause 2.0

@@ -58,6 +58,7 @@ label roof:
 label helicopter:
     # Script
     hide screen help_button
+    play music "audio/helicopter.wav"
 
     label .boarding:
         scene bg plain_white with fade
@@ -253,6 +254,7 @@ label helicopter:
             align (0.5, 0.5)
             pos (0.8, 0.36)
             linear 0.25 zoom 2
+        play audio "audio/glass.wav"
         pause 1.0
 
     label .spiralling:
@@ -357,6 +359,7 @@ label helicopter:
             linear 2.0 pos (0.5, 2.0)
             linear 1.0 rotate -90
         pause 2.0
+        play sound "audio/crash.wav" loop
         hide spinning_helicopter
         show rolling_helicopter:
             align (0.5, 0.5)
@@ -369,6 +372,7 @@ label helicopter:
             rotate -10
             linear 0.5 pos (-0.25, 0.0) rotate -20
         pause 1.0
+        stop music
 
     label .rolling_inside:
         scene bg plain_navy
@@ -410,6 +414,7 @@ label helicopter:
         pause 1.0
         hide rolling_helicopter
         show bg park_gazebo_northeast_night_z
+        stop sound
         play audio "audio/explosion.wav"
         show explosion_smoke:
             align (0.5, 0.5)
@@ -423,6 +428,7 @@ label helicopter:
             zoom 2.0
             alpha 1.0
             linear 0.25 zoom 3 alpha 0.0
+        with vpunch
         pause 3.0
 
     label .lock_and_load:

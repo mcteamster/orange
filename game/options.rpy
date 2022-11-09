@@ -61,13 +61,17 @@ Sound effects mixed from {a=https://soundbible.com}soundbible.com{/a} under {a=h
 - {a=https://soundbible.com/2068-Woosh.html}Whoosh{/a} by Mark DiAngelo\n
 - {a=https://soundbible.com/1529-Dog-Bite.html}Bite{/a},
 {a=https://soundbible.com/538-Blast.html}Explosion{/a},
+{a=https://soundbible.com/105-Light-Bulb-Breaking.html}Glass{/a},
 {a=https://soundbible.com/1271-Harpoon.html}Harpoon{/a},
+{a=https://soundbible.com/1894-Helicopter-Hovering.html}Helicopter{/a},
 {a=https://soundbible.com/1522-Balloon-Popping.html}Pop{/a},
 {a=https://soundbible.com/1201-Automatic-Machine-Gun-3x.html}Rifle{/a},
+{a=https://soundbible.com/1611-TV-Static.html}Static{/a},
 {a=https://soundbible.com/1008-Decapitation.html}Sword{/a} by Mike Koenig\n
 - {a=https://soundbible.com/1996-Shotgun-Reload-Old.html}Reload{/a},
 {a=https://soundbible.com/2095-Mossberg-500-Pump-Shotgun.html}Shotgun{/a} by RA The Sun God\n
-- {a=https://soundbible.com/2021-Atchisson-Assault-Shotgun.html}Sawnoff{/a} by Soundeffects
+- {a=https://soundbible.com/2021-Atchisson-Assault-Shotgun.html}Sawnoff{/a} by Soundeffects\n
+- {a=https://soundbible.com/1987-Rockslide-Small.html}Crash{/a} by Sound Explorer
 """)
 
 ## A short name for the game used for executables and directories in the built
