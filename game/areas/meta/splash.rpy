@@ -18,8 +18,10 @@ label splashscreen:
             pos (0.5, 0.5)
             linear 4.0 xpos 0.45
         with fade
-        play sound "audio/static.wav"
-        pause 3.0
+        play sound "audio/static.wav" volume 0.25
+        pause 2.75
+        play music "audio/music/molto_allegro.mp3"
+        pause 0.25
     
     label .table:
         scene bg splash_table
@@ -52,7 +54,7 @@ label splashscreen:
             pos (0.4, 0.5)
             crop (0, 0, 0.0, 1.0)
             linear 4.0 crop (0, 0, 1.0, 1.0)
-        play sound "audio/static.wav"
+        play sound "audio/static.wav" volume 0.25
         pause 3.0
 
     label .wake:
@@ -68,13 +70,13 @@ label splashscreen:
     label .neighbour:
         scene bg splash_neighbour
         pause 1.0
-        "Where {w=0.75}{nw}"
-        extend "the {w=0.75}{nw}"
+        "Where {w=1.25}{nw}"
+        extend "the {w=1.25}{nw}"
         extend "HECK {w=1}{nw}" with vpunch
-        extend "is {w=0.25}{nw}"
-        extend "my {w=0.25}{nw}"
-        extend "Orange {w=1}{nw}" with vpunch
-        extend "Narwhal?{w=2}{nw}" with vpunch
+        extend "is {w=0.5}{nw}"
+        extend "my {w=0.5}{nw}"
+        extend "Orange {w=1.0}{nw}" with vpunch
+        extend "Narwhal?{w=1.0}{nw}" with vpunch
 
     label .panic:
         scene bg splash_panic
@@ -85,7 +87,7 @@ label splashscreen:
         scene bg plain_charcoal
         show cutscene_top exit onlayer screens
         show cutscene_bottom exit onlayer screens
-        centered "Ohnomer presents...{w=4}{nw}"
+        centered "Ohnomer presents...{w=3.5}{nw}"
 
     label .title:
         scene bg splash_title

@@ -402,7 +402,7 @@ label temple_raid:
     show rappel_6 zorder 1
     pause 0.25
     play audio "audio/whoosh.wav"
-    play music "audio/rifle.wav"
+    play sound "audio/rifle.wav" loop
     pause 0.75
     show smoke_plume zorder 2
     show smoke_cloud zorder 2
@@ -568,7 +568,7 @@ label temple_raid_shootout:
     scene bg hideout_temple_side
     show pillars onlayer screens zorder 1
     with fade
-    stop music fadeout 0.5
+    stop sound fadeout 0.5
     show screen interact_temple_raid_shootout
     show screen temple_raid_timer
     show shotgun equip onlayer screens zorder 50

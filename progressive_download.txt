@@ -7,4 +7,3 @@
 - image game/**
 - image game/images/**
 - music game/audio/**
-+ voice game/voice/**

@@ -52,14 +52,19 @@ Story and Graphics by Andrew W.
 
 Programming and Production by {a=https://games.tonz.io}Tony Z.{/a}
 
+Music from the Public Domain:\n
+- {a=https://www.chosic.com/download-audio/25966/}Mozart: Symphony No. 40 in G Minor, K. 550 – I. Molto Allegro{/a} by Musopen Symphony
+
 Sound effects mixed from {a=https://soundbible.com}soundbible.com{/a} under {a=https://creativecommons.org/licenses/by/3.0/}Creative Commons Attribution 3.0{/a} license:\n
 - {a=https://soundbible.com/1571-Fishtank-Bubbles-2.html}Bubbles{/a} by amanda\n
 - {a=https://soundbible.com/1911-Mandatory-Evacuation.html}Alarm{/a} by Brandon\n
 - {a=https://soundbible.com/1757-Car-Brake-Crash.html}Skid{/a} by Cam Martinez\n
-- {a=https://soundbible.com/2209-Muscle-Car.html}Bus{/a} by Daniel Simion\n
+- {a=https://soundbible.com/2209-Muscle-Car.html}Bus{/a},
+{a=https://soundbible.com/2201-Large-Waterfall.html}Water Rush{/a} by Daniel Simion\n
 - {a=https://soundbible.com/2062-Metal-Gong-1.html}Bell{/a} by Dianakc\n
 - {a=https://soundbible.com/2068-Woosh.html}Whoosh{/a} by Mark DiAngelo\n
 - {a=https://soundbible.com/1529-Dog-Bite.html}Bite{/a},
+{a=https://soundbible.com/2114-Flush-Toilet--2.html}Drain{/a},
 {a=https://soundbible.com/538-Blast.html}Explosion{/a},
 {a=https://soundbible.com/105-Light-Bulb-Breaking.html}Glass{/a},
 {a=https://soundbible.com/1271-Harpoon.html}Harpoon{/a},
@@ -67,7 +72,8 @@ Sound effects mixed from {a=https://soundbible.com}soundbible.com{/a} under {a=h
 {a=https://soundbible.com/1522-Balloon-Popping.html}Pop{/a},
 {a=https://soundbible.com/1201-Automatic-Machine-Gun-3x.html}Rifle{/a},
 {a=https://soundbible.com/1611-TV-Static.html}Static{/a},
-{a=https://soundbible.com/1008-Decapitation.html}Sword{/a} by Mike Koenig\n
+{a=https://soundbible.com/1008-Decapitation.html}Sword{/a},
+{a=https://soundbible.com/2115-Pouring-Drink.html}Water Rising{/a} by Mike Koenig\n
 - {a=https://soundbible.com/1996-Shotgun-Reload-Old.html}Reload{/a},
 {a=https://soundbible.com/2095-Mossberg-500-Pump-Shotgun.html}Shotgun{/a} by RA The Sun God\n
 - {a=https://soundbible.com/2021-Atchisson-Assault-Shotgun.html}Sawnoff{/a} by Soundeffects\n
@@ -130,7 +136,7 @@ define config.has_voice = False
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "audio/music/molto_allegro.mp3"
 
 
 ## Transitions #################################################################

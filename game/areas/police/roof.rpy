@@ -58,7 +58,7 @@ label roof:
 label helicopter:
     # Script
     hide screen help_button
-    play music "audio/helicopter.wav"
+    play sound "audio/helicopter.wav" loop
 
     label .boarding:
         scene bg plain_white with fade
@@ -359,7 +359,6 @@ label helicopter:
             linear 2.0 pos (0.5, 2.0)
             linear 1.0 rotate -90
         pause 2.0
-        play sound "audio/crash.wav" loop
         hide spinning_helicopter
         show rolling_helicopter:
             align (0.5, 0.5)
@@ -372,7 +371,8 @@ label helicopter:
             rotate -10
             linear 0.5 pos (-0.25, 0.0) rotate -20
         pause 1.0
-        stop music
+        stop sound
+        play sound "audio/crash.wav" loop
 
     label .rolling_inside:
         scene bg plain_navy

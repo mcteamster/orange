@@ -227,13 +227,17 @@ label mermaids_revenge:
         "I probably shouldn't piss off these crazy clowns just yet."
         call screen interact_hydrant
     $ inventory["wrench"]["active"] = False
-    scene bg circus_hydrant_open with fade
+    scene bg circus_hydrant_open
+    play audio "audio/water_rush.wav"
+    with fade
     pause 2.0
     scene bg circus_tent
     show tent_rising_water_a
     show tent_rising_water_b
+    play audio "audio/water_rising.wav"
     with fade
     pause 1.5
+    play audio "audio/bubbles.wav"
     scene bg circus_drain
     show deep_water zorder 3:
         alpha 0.5
@@ -267,6 +271,7 @@ label mermaids_revenge:
         align (0.0, 0.0)
         pos (1.2, 0.1)
         linear 1.0 xpos -1.0
+    play audio "audio/bubbles.wav"
     pause 0.25
     show mermaid_purple_attack zorder 2:
         align (0.0, 0.0)
@@ -300,6 +305,7 @@ label mermaids_revenge:
         align (0.5, 0.5)
         pos (0.5, 0.5)
         linear 4.0 rotate -2000
+    play audio "audio/drain.wav"
     with fade
     pause 3.5
     jump mermaid_quest_complete
@@ -322,7 +328,7 @@ label clown_quest_complete:
     hide clown_van onlayer screens
     hide screen interact_bank_south_shootout
     with fade
-    stop music fadeout 1.0
+    stop sound fadeout 1.0
     scene bg plain_charcoal with fade
     centered "You speed across town..."
     scene bg circus_tent_table with fade

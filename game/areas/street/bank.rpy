@@ -331,9 +331,13 @@ label bank_south_shootout:
         hide screen bank_south_timer
         hide sawnoff onlayer screens
         hide sawnoff_flash onlayer screens
-        $ inventory["sawnoff"]["ammo"] = 2
+        hide sawnoff_base onlayer screenss
+        hide sawnoff_shells onlayer screens
+        hide sawnoff_barrel onlayer screens
+        hide sawnoff_hand onlayer screens
         hide screen reloading
-        stop music fadeout 1.0
+        $ inventory["sawnoff"]["ammo"] = 2
+        stop sound fadeout 1.0
         pause 0.5
         jump street_shot_death
 

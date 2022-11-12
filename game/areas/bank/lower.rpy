@@ -127,7 +127,7 @@ label inner_vault:
         call screen interact_inner_vault_night
     else:
         scene bg bank_inner_vault with fade
-        play music "audio/alarm.wav"
+        play sound "audio/alarm.wav" loop
         show clown_no_arm:
             align (1.0, 0)
             pos (0.0, 0.03)
