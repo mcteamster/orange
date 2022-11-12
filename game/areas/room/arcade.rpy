@@ -10,10 +10,10 @@ label arcade(origin="chinatown_east"):
                 ]
         frame:
             pos (0.23, 0.24)
-            textbutton "arcade_land_mines":
+            textbutton "land_mines":
                 xysize (0.11, 0.24)
                 action [
-                    Jump("arcade_land_mines")
+                    Jump("land_mines")
                 ]
         frame:
             pos (0.1, 0.2)
@@ -116,20 +116,6 @@ label arcade(origin="chinatown_east"):
         pause 1.0
         scene bg room_arcade
         call screen interact_arcade
-
-label arcade_land_mines:
-    screen interact_arcade_land_mines():
-        frame:
-            pos (0.0, 0.8)
-            textbutton "arcade":
-                xysize (1.0, 0.2)
-                action [
-                    Jump("arcade")
-                ]
-
-    # TODO: v4.1.0
-    scene bg room_arcade_out_of_order with fade
-    call screen interact_arcade_out_of_order
 
 label arcade_do_or_die:
     screen interact_arcade_do_or_die():

@@ -15,6 +15,12 @@ default progress = {
     },
     "lives": 1,
     "minigames": {
+        "land_mines": {
+            "highscore": 999,
+            "remaining": 81,
+            "tripped": False,
+            "victory": False,
+        },
         "ninja_assassin": {
             "attempts": 0,
             "complete": False,

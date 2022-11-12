@@ -3,14 +3,14 @@ label ninja_assassin:
     screen interact_ninja_assassin_menu():
         frame:
             pos (0.02, 0.8625)
-            textbutton "chinatown":
+            textbutton "play":
                 xysize (0.11, 0.09)
                 action [
                     Jump("ninja_assassin.play")
                 ]
         frame:
             pos (0.865, 0.8625)
-            textbutton "arcade_land_mines":
+            textbutton "quit":
                 xysize (0.11, 0.09)
                 action [
                     Jump("ninja_assassin.quit")
