@@ -363,7 +363,7 @@ label bank_foyer_shootout:
         hide screen bank_foyer_timer
         hide sawnoff onlayer screens
         hide sawnoff_flash onlayer screens
-        hide sawnoff_base onlayer screenss
+        hide sawnoff_base onlayer screens
         hide sawnoff_shells onlayer screens
         hide sawnoff_barrel onlayer screens
         hide sawnoff_hand onlayer screens

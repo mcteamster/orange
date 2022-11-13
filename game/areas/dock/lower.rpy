@@ -103,7 +103,7 @@ label pub_smoke:
         linear 1.0 ypos 1.4
 
     # Script
-    $ pub_scene = "bg dock_pub" + ("_beer" if inventory["beer"]["active"] else "") + ("_open" if inventory["noodles"]["active"] else "")
+    $ pub_scene = "bg dock_pub" + ("_beer" if (inventory["beer"]["active"] and inventory["helmet"]["active"] == False) else "") + ("_open" if inventory["noodles"]["active"] else "")
     scene expression pub_scene
     show screen interact_pub_smoke
     show smoke_thrown
