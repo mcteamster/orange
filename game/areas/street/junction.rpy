@@ -192,6 +192,11 @@ label junction:
         hide shotgun_flash onlayer screens
         hide sawnoff onlayer screens
         hide sawnoff_flash onlayer screens
+        hide sawnoff_base onlayer screens
+        hide sawnoff_shells onlayer screens
+        hide sawnoff_barrel onlayer screens
+        hide sawnoff_hand onlayer screens
+        hide screen reloading
         $ inventory["sawnoff"]["ammo"] = 2
         with fade
         jump horde
@@ -210,5 +215,10 @@ label junction:
             pause 0.5
             hide sawnoff onlayer screens
             hide sawnoff_flash onlayer screens
+            hide sawnoff_base onlayer screens
+            hide sawnoff_shells onlayer screens
+            hide sawnoff_barrel onlayer screens
+            hide sawnoff_hand onlayer screens
+            hide screen reloading
             $ inventory["sawnoff"]["ammo"] = 2
         call screen interact_junction

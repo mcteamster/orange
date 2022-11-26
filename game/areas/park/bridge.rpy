@@ -166,6 +166,11 @@ label bridge_north:
         hide shotgun_flash onlayer screens
         hide sawnoff onlayer screens
         hide sawnoff_flash onlayer screens
+        hide sawnoff_base onlayer screens
+        hide sawnoff_shells onlayer screens
+        hide sawnoff_barrel onlayer screens
+        hide sawnoff_hand onlayer screens
+        hide screen reloading
         $ inventory["sawnoff"]["ammo"] = 2
         with fade
         jump horde
@@ -184,6 +189,11 @@ label bridge_north:
             pause 0.5
             hide sawnoff onlayer screens
             hide sawnoff_flash onlayer screens
+            hide sawnoff_base onlayer screens
+            hide sawnoff_shells onlayer screens
+            hide sawnoff_barrel onlayer screens
+            hide sawnoff_hand onlayer screens
+            hide screen reloading
             $ inventory["sawnoff"]["ammo"] = 2
         call screen interact_bridge_north
 
@@ -389,6 +399,11 @@ label bridge_west:
         hide shotgun_flash onlayer screens
         hide sawnoff onlayer screens
         hide sawnoff_flash onlayer screens
+        hide sawnoff_base onlayer screens
+        hide sawnoff_shells onlayer screens
+        hide sawnoff_barrel onlayer screens
+        hide sawnoff_hand onlayer screens
+        hide screen reloading
         $ inventory["sawnoff"]["ammo"] = 2
         with fade
         jump horde
@@ -407,5 +422,10 @@ label bridge_west:
             pause 0.5
             hide sawnoff onlayer screens
             hide sawnoff_flash onlayer screens
+            hide sawnoff_base onlayer screens
+            hide sawnoff_shells onlayer screens
+            hide sawnoff_barrel onlayer screens
+            hide sawnoff_hand onlayer screens
+            hide screen reloading
             $ inventory["sawnoff"]["ammo"] = 2
         call screen interact_bridge_west

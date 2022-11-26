@@ -216,6 +216,11 @@ label foyer_exit:
         hide shotgun_flash onlayer screens
         hide sawnoff onlayer screens
         hide sawnoff_flash onlayer screens
+        hide sawnoff_base onlayer screens
+        hide sawnoff_shells onlayer screens
+        hide sawnoff_barrel onlayer screens
+        hide sawnoff_hand onlayer screens
+        hide screen reloading
         $ inventory["sawnoff"]["ammo"] = 2
         with fade
         jump horde
@@ -234,6 +239,11 @@ label foyer_exit:
             pause 0.5
             hide sawnoff onlayer screens
             hide sawnoff_flash onlayer screens
+            hide sawnoff_base onlayer screens
+            hide sawnoff_shells onlayer screens
+            hide sawnoff_barrel onlayer screens
+            hide sawnoff_hand onlayer screens
+            hide screen reloading
             $ inventory["sawnoff"]["ammo"] = 2
         call screen interact_foyer_exit
 
@@ -379,6 +389,11 @@ label bank_foyer_shootout:
         pause 0.5
         hide sawnoff onlayer screens
         hide sawnoff_flash onlayer screens
+        hide sawnoff_base onlayer screens
+        hide sawnoff_shells onlayer screens
+        hide sawnoff_barrel onlayer screens
+        hide sawnoff_hand onlayer screens
+        hide screen reloading
         $ inventory["sawnoff"]["ammo"] = 2
         scene bg plain_white 
         hide screen interact_bank_foyer_shootout
