@@ -152,7 +152,7 @@ label fork_north:
     label .ambushed:
         play audio "audio/bite.wav"
         show screen zombie_ambushed
-        show zombie_ambush onlayer screens zorder 61:
+        show zombie_ambush onlayer screens zorder 60:
             align (0.5, 0.5)
             pos (0.5, 1.5)
             linear 0.25 ypos 0.66
@@ -386,7 +386,7 @@ label fork_west:
     label .ambushed:
         play audio "audio/bite.wav"
         show screen zombie_ambushed
-        show zombie_ambush onlayer screens zorder 61:
+        show zombie_ambush onlayer screens zorder 60:
             align (0.5, 0.5)
             pos (0.5, 1.5)
             linear 0.25 ypos 0.66
