@@ -199,7 +199,8 @@ label downtown:
 
     label .ambushed:
         play audio "audio/bite.wav"
-        show zombie_ambush onlayer screens zorder 1:
+        show screen zombie_ambushed
+        show zombie_ambush onlayer screens zorder 61:
             align (0.5, 0.5)
             pos (0.5, 1.5)
             linear 0.25 ypos 0.66

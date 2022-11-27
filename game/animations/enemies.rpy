@@ -171,6 +171,7 @@ label horde:
     hide sawnoff_barrel onlayer screens
     hide sawnoff_hand onlayer screens
     hide screen reloading
+    hide screen zombie_ambushed
     play audio "audio/bell.wav"
     pause 6.0
     jump game_over
@@ -1178,3 +1179,6 @@ image zombie_tap_c dead_arm:
     rotate 0
     pause 0.5
     easeout 1.0 pos (-0.36, -1.12) rotate 90
+
+screen zombie_ambushed():
+    button action NullAction()
