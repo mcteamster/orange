@@ -1,3 +1,6 @@
+init python:
+    import requests
+
 label evaluation:
     # Settings
     $ attempts = "Final Tab:\n"+str(progress["lives"])+(" Beers" if progress["lives"] > 1 else " Beer")
@@ -21,6 +24,12 @@ label evaluation:
         $ clowns_result = "{color=#ff0}IGNORED{/color}"
 
     $ mermaids_result = "{color=#0f0}HELPED{/color}" if (progress["quests"]["mermaids"]["complete"] or inventory["helmet"]["active"]) else "{color=#f00}NEGLECTED{/color}"
+
+    python:
+        try:
+            requests.post("https://fton-service.ohnomer.com/track", json={ 'event': 'fton-endgame', 'attempts': progress["lives"], 'quests': progress["quests"] }, timeout=3)
+        except Exception as e:
+            print(e)
 
     # Screens
     screen evaluation_results():
