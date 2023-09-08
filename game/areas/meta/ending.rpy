@@ -1,6 +1,3 @@
-init python:
-    import requests
-
 label evaluation:
     # Settings
     $ attempts = "Final Tab:\n"+str(progress["lives"])+(" Beers" if progress["lives"] > 1 else " Beer")
@@ -24,12 +21,6 @@ label evaluation:
         $ clowns_result = "{color=#ff0}IGNORED{/color}"
 
     $ mermaids_result = "{color=#0f0}HELPED{/color}" if (progress["quests"]["mermaids"]["complete"] or inventory["helmet"]["active"]) else "{color=#f00}NEGLECTED{/color}"
-
-    python:
-        try:
-            requests.post("https://fton-service.ohnomer.com/track", json={ 'event': 'fton-endgame', 'attempts': progress["lives"], 'quests': progress["quests"] }, timeout=3)
-        except Exception as e:
-            print(e)
 
     # Screens
     screen evaluation_results():
@@ -83,4 +74,21 @@ label evaluation:
     with fade
     pause 1.0
     purple_duck "So are we having another big one tonight?{w=4}{nw}"
-    $ renpy.full_restart()
+
+    python:
+        try:
+            # Have to use urllib for web support. HTTP only.
+            from urllib import request, parse
+            params = parse.urlencode({
+                'event': 'fton/endgame',
+                'meta': {
+                    'attempts': progress["lives"],
+                    'quests': progress["quests"],
+                }
+            })
+            url = f"http://track.ohnomer.com/?{params}"
+            req =  request.Request(url)
+        except Exception as e:
+            print(e)
+
+        renpy.full_restart()
