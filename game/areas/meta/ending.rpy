@@ -90,7 +90,7 @@ label evaluation:
                         'quests': progress["quests"],
                     }
                 })
-                url = f"https://orange.mcteamster.com/stats?{params}"
+                url = f"https://orange.mcteamster.com/stats.html?{params}"
                 renpy.run(OpenURL(url))
             except Exception as e:
                 print(e)
