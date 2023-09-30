@@ -4,6 +4,5 @@
 #
 # +/- type path
 - image game/gui/**
-- image game/**
-- image game/images/**
-- music game/audio/**
+- image game/images/bg splash*
++ image game/**
