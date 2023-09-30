@@ -28,6 +28,9 @@ label evaluation:
             pos (0.15, 0.2)
             text_align 0.5
             size 100
+        text "Stats Online":
+            pos (0.87, 0.93)
+            size 40
         vbox:
             align (0.85, 0.5)
             spacing 150
@@ -36,6 +39,13 @@ label evaluation:
             text "You [police_result] the Police"
             text "You [clowns_result] the Clowns"
             text "You [mermaids_result] the Mermaids"
+        frame:
+            pos (0.85, 0.9)
+            textbutton "open_stats":
+                xysize (0.15, 0.1)
+                action [
+                    Jump("evaluation.open_stats")
+                ]
 
     # Sprites
     image endgame_crown:
@@ -66,6 +76,27 @@ label evaluation:
     show beer_full:
         linear 4.0 crop (0.0, 1.0, 1.0, 0.0)
     pause
+    jump couch
+
+    label .open_stats:
+        python:
+            try:
+                # Have to use urllib for web support
+                from urllib import request, parse
+                params = parse.urlencode({
+                    'event': 'fton/endgame',
+                    'meta': {
+                        'attempts': progress["lives"],
+                        'quests': progress["quests"],
+                    }
+                })
+                url = f"https://orange.mcteamster.com/stats?{params}"
+                renpy.run(OpenURL(url))
+            except Exception as e:
+                print(e)
+        jump couch
+
+label couch:
     hide screen evaluation_results
     scene bg meta_endgame_couch
     hide screen hud_inventory
@@ -73,22 +104,5 @@ label evaluation:
     show cutscene_bottom onlayer screens
     with fade
     pause 1.0
-    purple_duck "So are we having another big one tonight?{w=4}{nw}"
-
-    python:
-        try:
-            # Have to use urllib for web support. HTTP only.
-            from urllib import request, parse
-            params = parse.urlencode({
-                'event': 'fton/endgame',
-                'meta': {
-                    'attempts': progress["lives"],
-                    'quests': progress["quests"],
-                }
-            })
-            url = f"http://track.ohnomer.com/?{params}"
-            req =  request.Request(url)
-        except Exception as e:
-            print(e)
-
-        renpy.full_restart()
+    purple_duck "So are we having another big one tonight?"
+    $ renpy.full_restart()
