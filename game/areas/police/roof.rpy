@@ -41,13 +41,15 @@ label roof:
     # Script
     if (progress["night"] or inventory["key"]["active"]):
         scene bg police_roof_night
+        if (progress["quests"]["police"]["complete"] or inventory["shotgun"]["active"]):
+            show police_helicopter
+            show police_officer_helicopter
     elif progress["evening"] or (inventory["beer"]["active"] and inventory["cash"]["active"] and inventory["noodles"]["active"]):
         scene bg police_roof_eve
+        show police_helicopter
     else:
         scene bg police_roof
-    if (progress["quests"]["police"]["complete"] or inventory["shotgun"]["active"]):
         show police_helicopter
-        show police_officer_helicopter
     with fade
     call screen interact_roof
 
