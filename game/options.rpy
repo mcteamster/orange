@@ -24,33 +24,34 @@ define gui.show_name = False
 
 ## The version of the game.
 
-define config.version = "4.1.4"
+define config.version = "4.2.0"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
-------------------------
-
-Find the Orange Narwhal is a wild teenage fever dream jammed into a point-and-click adventure.
+Overcome your crippling hangover and work out how to get the Narwhal back! 
+Point-and-click your way around town, run errands, and uncover the mystery. 
+But choose who you help carefully - your decisions may come back to bite you! 
+Think outside the box and brace yourself for a fever-dream adventure!
 
 Earler versions of this game were made in PowerPoint, pushing the limits of what was possible.
 Unfortunately, computers back then weren't powerful enough to handle 4606 slides of action-packed interactive content.
 
-Our raging ambition has since faded and the time has come to share this masterpiece with a wider audience.
+Frankly the plot makes absolutely no sense and was just an excuse to do a multiverse mash-up of game themes and mechanics.
+Embrace the lunacy and chaos and you get a somewhat cohesive story reminiscent of the Flash games of the early 2000s.
 
-Click, click, click! Walk around town and uncover the mystery of what happened to the Orange Narwhal!
-
-Honestly this game doesn't make much sense - we just hope you enjoy figuring it out as much as we enjoyed making it.
+We hope you enjoy figuring it out as much as we enjoyed making it.
+Re-live the satisfaction of finishing a challenge you didn't know you needed in the first place!
 
 ------------------------
 
-Ohnomer | 2022
+An Ohnomer Production
 
 Story and Graphics by Andrew W.
 
-Programming and Production by {a=https://games.tonz.io}Tony Z.{/a}
+Programming and Production by {a=https://mcteamster.com}Tony Z.{/a}
 
 Music from the Public Domain:\n
 - {a=https://www.chosic.com/download-audio/25966/}Mozart: Symphony No. 40 in G Minor, K. 550 – I. Molto Allegro{/a} by Musopen Symphony
