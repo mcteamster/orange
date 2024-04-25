@@ -35,6 +35,32 @@ label apartment:
 
     if progress["awake"] == False:
         "What did we do with that narwhal? I don't remember a thing from last night!"
+        show hint_paper
+        show tutorial_interact:
+            zoom 0.75
+            align (0.5, 0.5)
+            pos (0.5, 0.48)
+        "{i}Click on people and things to interact and move.{/i}"
+        hide tutorial_interact
+        show tutorial_reverse:
+            zoom 0.67
+            align (0.5, 0.5)
+            pos (0.5, 0.48)
+        "{i}Click the edges of the screen to turn around/reverse.{/i}"
+        hide tutorial_reverse
+        show tutorial_inventory:
+            zoom 0.67
+            align (0.5, 0.5)
+            pos (0.5, 0.48)
+        "{i}Click highlighted items in your inventory to use them.{/i}"
+        hide tutorial_inventory
+        show tutorial_help:
+            zoom 0.8
+            align (0.5, 0.5)
+            pos (0.5, 0.48)
+        "{i}When in doubt, click the help (?) button, or just click everything!{/i}"
+        hide tutorial_help
+        hide hint_paper
     call screen interact_apartment
 
     label .look:
