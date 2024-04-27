@@ -38,6 +38,8 @@ label noodle_house(origin="chinatown_east"):
 
 label ninja_quest_complete:
     # Screens
+    $ achievement.grant("ninjas")
+    $ achievement.sync()
     screen interact_ninja_quest_complete():
         modal True
         frame:

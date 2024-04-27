@@ -107,6 +107,8 @@ label pipe:
         pause
 
 label mermaid_quest_complete:
+    $ achievement.grant("mermaids")
+    $ achievement.sync()
     screen interact_mermaid_quest_complete():
         button action NullAction()
         frame:

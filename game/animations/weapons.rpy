@@ -233,4 +233,6 @@ label explode:
     pause 4.0
     hide screen interact_explode
     $ inventory["bomb"]["active"] = True
+    $ achievement.grant("explode")
+    $ achievement.sync()
     jump game_over

@@ -71,4 +71,6 @@ label arrested:
     with fade
     play audio "audio/bell.wav"
     pause 4.0
+    $ achievement.grant("jail")
+    $ achievement.sync()
     jump game_over

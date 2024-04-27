@@ -612,6 +612,8 @@ label beheaded_death:
     play audio "audio/bell.wav"
     pause 4.5
     $ inventory["shotgun"]["active"] = False
+    $ achievement.grant("sword")
+    $ achievement.sync()
     jump game_over
 
 label monk_boss:
@@ -752,6 +754,8 @@ label police_quest_complete:
         align (0, 0)
         pos (0.41, 0.39)
     show screen interact_police_quest_complete
+    $ achievement.grant("police")
+    $ achievement.sync()
     officer "Here's your {i}cash{/i} reward."
     pause
 

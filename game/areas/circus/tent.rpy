@@ -337,5 +337,7 @@ label clown_quest_complete:
     scene bg circus_tent_table_complete
     $ progress["quests"]["clowns"]["complete"] = True
     show screen interact_clown_quest_complete
+    $ achievement.grant("clowns")
+    $ achievement.sync()
     clown "Here is your cut of the {i}cash{/i}."
     pause

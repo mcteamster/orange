@@ -95,6 +95,8 @@ label balcony:
         jump pier.dive
 
 label pirate_quest_complete:
+    $ achievement.grant("pirates")
+    $ achievement.sync()
     screen interact_pirate_quest_complete():
         modal True
         frame:

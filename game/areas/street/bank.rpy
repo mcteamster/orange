@@ -419,4 +419,6 @@ label street_shot_death:
     pause 6.0
     $ inventory["sawnoff"]["active"] = False
     $ inventory["bomb"]["active"] = True
+    $ achievement.grant("shot")
+    $ achievement.sync()
     jump game_over

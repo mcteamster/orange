@@ -281,4 +281,6 @@ label drowned:
     pause 3.0
     show depths_drowned -closeup
     pause 3.0
+    $ achievement.grant("drown")
+    $ achievement.sync()
     jump game_over

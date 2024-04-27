@@ -152,6 +152,8 @@ label hanged:
     with fade
     play audio "audio/bell.wav"
     pause 3.5
+    $ achievement.grant("hung")
+    $ achievement.sync()
     jump game_over
 
 label kiosk:

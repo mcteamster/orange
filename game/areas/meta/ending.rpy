@@ -1,6 +1,13 @@
 label evaluation:
     # Settings
+    $ achievement.grant("found")
+    $ achievement.sync()
+
     $ attempts = "Final Tab:\n"+str(progress["lives"])+(" Beers" if progress["lives"] > 1 else " Beer")
+    if (progress["lives"] == 1):
+        $ achievement.grant("perfect")
+        $ achievement.sync()
+
     $ pirates_result = "{color=#ff0}EXPLOITED{/color}" if (progress["quests"]["pirates"]["complete"] or inventory["helmet"]["active"]== False) else "{color=#f00}BETRAYED{/color}"
     $ ninjas_result = "{color=#f00}BETRAYED{/color}" if (progress["quests"]["police"]["complete"] or inventory["shotgun"]["active"]) else "{color=#0f0}HELPED{/color}"
     
@@ -66,6 +73,8 @@ label evaluation:
         align (0.5, 1.0)
         pos (0.25, 0.85) 
     if inventory["shotgun"]["active"] and inventory["sawnoff"]["active"]:
+        $ achievement.grant("king")
+        $ achievement.sync()
         show endgame_crown
     show beer_full:
         align (0.5, 1.0)

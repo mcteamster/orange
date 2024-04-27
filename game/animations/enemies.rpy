@@ -174,6 +174,8 @@ label horde:
     hide screen zombie_ambushed
     play audio "audio/bell.wav"
     pause 6.0
+    $ achievement.grant("horde")
+    $ achievement.sync()
     jump game_over
 
 # Generic Zombies
