@@ -1,0 +1,257 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  background-color: #444;
+  color: white;
+  font-size: calc(min(4vw, 2.5vh));
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(237, 125, 49);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column-reverse;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.siteContainer {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(237, 125, 49);
+  background-image: url("./img/steamworks/fton_library_hero.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "b c"
+    "a a";
+}
+
+.download {
+  position: fixed;
+  top: 0.5em;
+  right: 0.5em;
+  font-size: 0.75em;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.download::-webkit-scrollbar {
+  display: none;
+}
+
+.download div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.download img {
+  max-width: 28vh;
+  max-height: 18vh;
+}
+
+.nodownload {
+  display: none;
+}
+
+.statContainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(53, 56, 77);
+  background-image: url("./img/arcade_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.faction {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.details {
+  width: 15vw;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: right;
+}
+
+.details img {
+  width: 3em;
+  height: 3em;
+  padding: 0 0.5em;
+}
+
+#ftonTitle {
+  grid-area: a;
+  z-index: 1;
+  color: white;
+  padding: 2vw;
+  font-size: 4em;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  text-align: left;
+}
+
+#ftonDescription {
+  grid-area: b;
+  font-size: 1em;
+  padding: 2vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#ftonVideo {
+  grid-area: b;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#ftonVideo video {
+  width: 100%;
+}
+
+#ftonSteam {
+  grid-area: c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#ftonMetrics {
+  font-size: 1em;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#ftonWidget {
+  max-width: 90vw;
+}
+
+#ftonHome {
+  position: fixed;
+  top: 0.5em;
+  left: 0.5em;
+  font-size: 0.75em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+#ftonHome img {
+  max-height: 4em;
+  max-width: 4em;
+}
+
+/* Mobile Only Styles */
+@media screen and (max-aspect-ratio: 2/3) {
+  body {
+    height: calc(90vh - 70px);
+  }
+
+  .siteContainer {
+    height: calc(90vh - 70px);
+    width: 100vw;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .siteContainer div {
+    padding: 1vh 5vw;
+  }
+
+  .download {
+    display: none;
+  }
+
+  .nodownload {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nodownload::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nodownload div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nodownload img {
+    max-width: 50vw;
+  }
+
+  .faction {
+    flex-direction: column;
+  }
+
+  .results {
+    width: 75em;
+    max-width: 75vw;
+  }
+
+  #ftonTitle {
+    text-align: center;
+  }
+
+  #ftonImage img {
+    max-width: 66vw;
+    z-index: 0;
+  }
+
+  #ftonVideo video {
+    max-width: 66vw;
+    z-index: 0;
+  }
+}
