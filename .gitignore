@@ -4,7 +4,7 @@
 # Renpy Artefacts
 *.rpyc*
 *.rpymc
-game/saves/*
+fton/game/saves/*
 cache/
 
 # Logs
@@ -12,3 +12,8 @@ errors.txt
 log.txt
 traceback.txt
 files.txt
+
+# Infra
+audio/*
+fton-*-dists
+renpy-*sdk
