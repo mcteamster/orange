@@ -1,17 +1,10 @@
 body {
-  height: 100vh;
-  width: 100vw;
   padding: 0;
   margin: 0;
-  background-color: #444;
-  color: white;
   font-size: calc(min(4vw, 2.5vh));
   font-family: Arial, Helvetica, sans-serif;
+  color: white;
   background-color: rgb(237, 125, 49);
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column-reverse;
 }
 
 a {
@@ -19,7 +12,7 @@ a {
   text-decoration: none;
 }
 
-.siteContainer {
+#container {
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -33,12 +26,42 @@ a {
   -ms-overflow-style: none;
   scrollbar-width: none;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: column;
 }
 
-.download {
+#ftonTitle {
+  position: fixed;
+  bottom: 0.5em;
+  left: 0.5em;
+  max-width: 66vw;
+  color: white;
+  font-size: 4em;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+#ftonVideo {
+  position: fixed;
+  top: 2em;
+  left: 2em;
+}
+
+#ftonVideo video {
+  width: min(50vw, 50vh)
+}
+
+#ftonWidget {
+  position: fixed;
+  top: 2em;
+  right: 2em;
+}
+
+#play {
   position: fixed;
   bottom: 1em;
   right: 1em;
@@ -51,127 +74,75 @@ a {
   font-size: 1.5em;
 }
 
-.nodownload {
-  display: none;
-}
-
-.statContainer {
-  height: 100vh;
-  width: 100vw;
-  background-color: rgb(53, 56, 77);
-  background-image: url("./img/arcade_background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  overflow-y: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-#ftonTitle {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  max-width: 75vw;
-  z-index: 1;
-  color: white;
-  padding: 2vw;
-  font-size: 4em;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  text-align: left;
-}
-
-#ftonVideo {
-  padding: 2em;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-#ftonVideo video {
-  max-width: 50vw;
-  max-height: 40vh;
-}
-
-#ftonSteam {
-  padding: 5em 0 0 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#ftonWidget {
-  max-width: 90vw;
-}
-
 #ftonPlay {
   border-radius: 0.5em;
   padding: 0.5em;
+  margin: 0.5em;
   background-color: white;
   color: orange;
   font-weight: bold;
 }
 
+#prompt {
+  display: none;
+}
+
 /* Mobile Only Styles */
-@media screen and (max-aspect-ratio: 2/3) {
-  body {
-    height: calc(90vh - 70px);
-  }
-
-  .siteContainer {
-    height: calc(90vh - 70px);
-    width: 100vw;
-    padding: 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  .siteContainer div {
-    padding: 1vh 5vw;
-  }
-
-  .download {
-    display: none;
-  }
-
-  .nodownload {
+@media screen and (max-aspect-ratio: 4/3) {
+  #ftonTitle {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-width: 100vw;
+    padding: 1em 0;
+    font-size: 2em;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    flex-wrap: wrap;
   }
 
-  #ftonTitle {
-    position: relative;
-    text-align: center;
-    max-width: 100vw;
-  }
-
-  #ftonImage img {
-    max-width: 66vw;
-    z-index: 0;
+  #ftonVideo {
+    position: fixed;
+    left: 50%;
+    right: 0;
+    top: 40%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   #ftonVideo video {
-    max-width: 90vw;
-    z-index: 0;
+    width: min(90vw, 90vh)
   }
 
-  #ftonSteam {
-    padding: 0;
+  #ftonWidget {
+    position: fixed;
+    left: 50%;
+    right: 0;
+    top: 75%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  #play {
+    display: none;
+  }
+
+  #prompt {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
   }
 }

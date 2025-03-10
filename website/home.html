@@ -7,26 +7,28 @@
 </head>
 
 <body>
-  <div class="siteContainer" onclick="void(0)">
+  <div id="container" onclick="void(0)">
     <div id="ftonVideo">
       <video controls autoplay muted>
         <source src="./video/orange_trailer.mp4" type="video/mp4">
       </video>
     </div>
+
     <div id="ftonTitle">
-      Find the<br>
-      Orange Narwhal
+      <div>Find the&nbsp;</div>
+      <div>Orange Narwhal</div>
     </div>
-    <a class="download" href="./index.html">
+
+    <iframe id="ftonWidget" src="https://store.steampowered.com/widget/2946010/" frameborder="0" width="646" height="190"></iframe>
+
+    <a id="play" href="./index.html">
       <div id="ftonPlay">
         PLAY NOW
       </div>
     </a>
-    <div id="ftonSteam">
-      <iframe id="ftonWidget" src="https://store.steampowered.com/widget/2946010/" frameborder="0" width="646" height="190"></iframe>
-      <div class="nodownload">
-        Play on desktop or get it on Steam!
-      </div>
+    
+    <div id="prompt">
+      Play on desktop or get it on Steam!
     </div>
   </div>
 </body>
