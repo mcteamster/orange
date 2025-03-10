@@ -59,6 +59,7 @@ a {
   position: fixed;
   top: 2em;
   right: 2em;
+  max-width: 90vw;
 }
 
 #play {
@@ -88,13 +89,13 @@ a {
 }
 
 /* Mobile Only Styles */
-@media screen and (max-aspect-ratio: 4/3) {
+@media screen and (max-aspect-ratio: 1/1) {
   #ftonTitle {
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
-    bottom: 0;
+    bottom: unset;
     max-width: 100vw;
     padding: 1em 0;
     font-size: 2em;
@@ -135,9 +136,6 @@ a {
 
   #prompt {
     position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
     bottom: 0;
     padding: 1em 0;
     display: flex;
