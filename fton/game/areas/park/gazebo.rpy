@@ -201,6 +201,7 @@ label gazebo_northeast:
         hide screen zombies_gazebo_northeast
         hide shotgun onlayer screens
         hide shotgun_flash onlayer screens
+        hide screen pumping
         hide sawnoff onlayer screens
         hide sawnoff_flash onlayer screens
         hide sawnoff_base onlayer screens
@@ -431,6 +432,7 @@ label gazebo_northwest:
         hide screen zombies_gazebo_northwest
         hide shotgun onlayer screens
         hide shotgun_flash onlayer screens
+        hide screen pumping
         hide sawnoff onlayer screens
         hide sawnoff_flash onlayer screens
         hide sawnoff_base onlayer screens
@@ -661,6 +663,7 @@ label gazebo_southeast:
         hide screen zombies_gazebo_southeast
         hide shotgun onlayer screens
         hide shotgun_flash onlayer screens
+        hide screen pumping
         hide sawnoff onlayer screens
         hide sawnoff_flash onlayer screens
         hide sawnoff_base onlayer screens

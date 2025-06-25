@@ -1,4 +1,8 @@
 label game_over:
+    # Screens
+    hide screen pumping
+    hide screen reloading
+
     # Script
     scene bg plain_black
     show beer_empty:

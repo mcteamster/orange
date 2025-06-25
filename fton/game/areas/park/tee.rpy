@@ -207,6 +207,7 @@ label tee_south:
         hide screen zombies_tee_south
         hide shotgun onlayer screens
         hide shotgun_flash onlayer screens
+        hide screen pumping
         hide sawnoff onlayer screens
         hide sawnoff_flash onlayer screens
         hide sawnoff_base onlayer screens
